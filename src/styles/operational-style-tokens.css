@@ -1,0 +1,118 @@
+.dy-sec-microapp-theme-scope {
+  color-scheme: light;
+  min-height: 100vh;
+  background: var(--dy-sec-bg-app);
+  color: var(--dy-sec-text-primary);
+  font-family: Inter, Helvetica, Arial, sans-serif;
+
+  --radius: var(--dy-sec-radius-md);
+  --radius-sm: var(--dy-sec-radius-sm);
+  --ring: var(--dy-sec-focus-ring);
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 500;
+  --font-weight-bold: 500;
+  --line-height-small: 1.45;
+  --line-height-sm: 1.45;
+  --line-height-base: 1.57;
+  --line-height-normal: 1.5;
+  --line-height-large: 1.4;
+  --line-height-tight: 1.25;
+  --spacing-1: var(--dy-sec-space-1);
+  --spacing-2: var(--dy-sec-space-2);
+  --spacing-3: 6px;
+  --spacing-4: var(--dy-sec-space-2);
+  --spacing-5: 10px;
+  --spacing-8: var(--dy-sec-space-4);
+
+  --l2-background: var(--dy-sec-bg-panel);
+  --l3-background: var(--dy-sec-bg-content);
+  --l2-border: var(--dy-sec-border-subtle);
+  --l3-border: var(--dy-sec-border-subtle);
+  --l2-foreground: var(--dy-sec-text-muted);
+  --l3-foreground: var(--dy-sec-text-muted);
+  --primary: var(--dy-sec-primary);
+  --primary-background: var(--dy-sec-primary);
+  --primary-background-hover: var(--dy-sec-primary-hover);
+  --primary-foreground: var(--dy-sec-text-inverse);
+  --primary-foreground-hover: var(--dy-sec-text-inverse);
+  --secondary-background: var(--dy-sec-secondary-bg);
+  --secondary-background-hover: var(--dy-sec-secondary-bg-hover);
+  --secondary-border: var(--dy-sec-secondary-border);
+  --secondary-foreground: var(--dy-sec-secondary-text);
+  --secondary-foreground-hover: var(--dy-sec-secondary-text);
+  --danger-background: var(--dy-sec-error);
+  --danger-background-hover: var(--dy-sec-error);
+  --danger-foreground: var(--dy-sec-text-inverse);
+  --danger-foreground-hover: var(--dy-sec-text-inverse);
+  --warning-background: var(--dy-sec-warning);
+  --warning-background-hover: var(--dy-sec-warning);
+  --warning-foreground: var(--dy-sec-text-inverse);
+  --warning-foreground-hover: var(--dy-sec-text-inverse);
+  --success-background: var(--dy-sec-success);
+  --ghost-background: transparent;
+  --ghost-background-hover: var(--dy-sec-bg-hover);
+  --ghost-border: transparent;
+  --ghost-foreground: var(--dy-sec-text-secondary);
+  --ghost-foreground-hover: var(--dy-sec-text-primary);
+  --action-background: var(--dy-sec-secondary-bg);
+  --action-background-hover: var(--dy-sec-secondary-bg-hover);
+  --action-border: var(--dy-sec-secondary-border);
+  --action-border-hover: var(--dy-sec-secondary-border-hover);
+  --action-foreground: var(--dy-sec-secondary-text);
+  --action-foreground-hover: var(--dy-sec-secondary-text);
+}
+
+.dy-sec-microapp-theme-scope[data-theme='dark'] {
+  color-scheme: dark;
+}
+
+.dy-sec-microapp-theme-scope :where(a, .ant-typography a, .ant-btn-link) {
+  color: var(--dy-sec-link-color) !important;
+}
+
+.dy-sec-microapp-theme-scope :where(a, .ant-typography a, .ant-btn-link):hover,
+.dy-sec-microapp-theme-scope :where(a, .ant-typography a, .ant-btn-link):focus-visible {
+  color: var(--dy-sec-link-hover) !important;
+}
+
+.dy-sec-microapp-theme-scope :where(a, .ant-typography a, .ant-btn-link):active {
+  color: var(--dy-sec-link-active) !important;
+}
+
+.dy-sec-microapp-theme-scope .ant-btn {
+  border-radius: var(--dy-sec-radius-sm) !important;
+  box-shadow: none !important;
+}
+
+.dy-sec-microapp-theme-scope .ant-btn-default:not(:disabled, .ant-btn-disabled) {
+  border-color: var(--dy-sec-secondary-border) !important;
+  background: var(--dy-sec-secondary-bg) !important;
+  color: var(--dy-sec-secondary-text) !important;
+}
+
+.dy-sec-microapp-theme-scope .ant-btn-default:not(:disabled, .ant-btn-disabled):hover,
+.dy-sec-microapp-theme-scope .ant-btn-default:not(:disabled, .ant-btn-disabled):focus-visible {
+  border-color: var(--dy-sec-secondary-border-hover) !important;
+  background: var(--dy-sec-secondary-bg-hover) !important;
+  color: var(--dy-sec-secondary-text) !important;
+}
+
+.dy-sec-microapp-theme-scope .ant-btn-primary:not(:disabled, .ant-btn-disabled) {
+  border-color: transparent !important;
+  background: var(--dy-sec-primary) !important;
+  color: var(--dy-sec-text-inverse) !important;
+}
+
+.dy-sec-microapp-theme-scope .ant-btn-primary:not(:disabled, .ant-btn-disabled):hover,
+.dy-sec-microapp-theme-scope .ant-btn-primary:not(:disabled, .ant-btn-disabled):focus-visible {
+  border-color: transparent !important;
+  background: var(--dy-sec-primary-hover) !important;
+  color: var(--dy-sec-text-inverse) !important;
+}
+
+.dy-sec-microapp-theme-scope .ant-btn-primary:not(:disabled, .ant-btn-disabled):active {
+  border-color: transparent !important;
+  background: var(--dy-sec-primary-strong) !important;
+  color: var(--dy-sec-text-inverse) !important;
+}

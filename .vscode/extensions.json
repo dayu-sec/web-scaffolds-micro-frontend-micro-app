@@ -1,0 +1,21 @@
+{
+  "recommendations": [
+    "alefragnani.bookmarks",
+    "chunsen.bracket-select",
+    "davidanson.vscode-markdownlint",
+    "dbaeumer.vscode-eslint",
+    "dbankier.vscode-quick-select",
+    "donjayamanne.githistory",
+    "eamodio.gitlens",
+    "editorconfig.editorconfig",
+    "esbenp.prettier-vscode",
+    "gruntfuggly.todo-tree",
+    "mhutchie.git-graph",
+    "ms-vscode.vscode-websearchforcopilot",
+    "nicholashsiang.vscode-change-case-next",
+    "nicholashsiang.vscode-opened-editors",
+    "streetsidesoftware.code-spell-checker",
+    "waderyan.gitblame",
+    "lokalise.i18n-ally"
+  ]
+}

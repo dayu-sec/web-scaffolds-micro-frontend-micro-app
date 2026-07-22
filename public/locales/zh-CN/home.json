@@ -1,0 +1,17 @@
+{
+  "actions": {
+    "features": "打开能力验证",
+    "language": "语言设置"
+  },
+  "eyebrow": "微应用模板",
+  "status": {
+    "request": "中性请求",
+    "requestDesc": "保留请求初始化约定，首屏不调用业务服务。",
+    "routing": "路由基准",
+    "routingDesc": "子路由保持在微应用路由前缀内。",
+    "runtime": "运行时就绪",
+    "runtimeDesc": "启动、渲染、适配器和清理使用统一模板路径。"
+  },
+  "subtitle": "用于验证运行时、路由、国际化、权限、请求和生命周期的可复用微应用界面。",
+  "title": "模板微应用"
+}

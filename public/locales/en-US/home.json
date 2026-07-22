@@ -1,0 +1,17 @@
+{
+  "actions": {
+    "features": "Open Capabilities",
+    "language": "Language"
+  },
+  "eyebrow": "Microapp template",
+  "status": {
+    "request": "Neutral request",
+    "requestDesc": "Request setup exists without a business service on first render.",
+    "routing": "Route base",
+    "routingDesc": "Child routes stay under the microapp route prefix.",
+    "runtime": "Runtime ready",
+    "runtimeDesc": "Bootstrap, render, adapter, and cleanup use one template path."
+  },
+  "subtitle": "A reusable microapp surface for runtime, routing, i18n, permission, request, and lifecycle validation.",
+  "title": "Template Microapp"
+}

@@ -1,0 +1,17 @@
+{
+  "actions": {
+    "features": "打開能力驗證",
+    "language": "語言設置"
+  },
+  "eyebrow": "微應用模板",
+  "status": {
+    "request": "中性請求",
+    "requestDesc": "保留請求初始化約定，首屏不調用業務服務。",
+    "routing": "路由基準",
+    "routingDesc": "子路由保持在微應用路由前綴內。",
+    "runtime": "運行時就緒",
+    "runtimeDesc": "啟動、渲染、適配器和清理使用統一模板路徑。"
+  },
+  "subtitle": "用於驗證運行時、路由、國際化、權限、請求和生命週期的可復用微應用界面。",
+  "title": "模板微應用"
+}

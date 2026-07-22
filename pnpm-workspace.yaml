@@ -1,0 +1,7 @@
+allowBuilds:
+  es5-ext: true
+  esbuild: true
+  simple-git-hooks: true
+minimumReleaseAgeExclude:
+  - '@seed-fe/*'
+  - '@lrd/*'
