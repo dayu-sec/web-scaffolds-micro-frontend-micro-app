@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import { RouterProvider } from 'react-router';
-import { type DySecThemeMode, getDySecAntdTheme, useDySecCssVariableScope } from '@lrd/dy-sec-bizcom-theme';
+import { type DySecThemeMode, getDySecAntdTheme, useDySecCssVariableScope } from '@dayu-sec/bizcom-theme';
 import { ConfigProvider, theme } from 'antd';
 import { useAntdLocaleSync } from '@/locales';
 import createRouter from './routes';

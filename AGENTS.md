@@ -84,7 +84,7 @@
 ## i18n
 
 - i18n 初始化、语言资源和主应用语言同步放在 `src/locales/*`。
-- 全局 `window.dy`、i18n 和事件通道类型来自 `@lrd/dy-sec-bizlib-shared-types/global`。
+- 全局 `window.dy`、i18n 和事件通道类型来自 `@dayu-sec/bizlib-shared-types/global`。
 - 不在微应用中复制主应用全局协议类型；需要事件类型时从共享类型包导入或转导。
 - 语言、主题、权限摘要等平台上下文由主应用提供，微应用只消费必要的只读信息。
 

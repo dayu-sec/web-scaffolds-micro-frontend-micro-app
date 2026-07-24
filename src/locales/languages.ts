@@ -1,4 +1,4 @@
-import type { LanguageConfig as SharedLanguageConfig } from '@lrd/dy-sec-bizlib-shared-types';
+import type { LanguageConfig as SharedLanguageConfig } from '@dayu-sec/bizlib-shared-types';
 
 type SupportedLanguage = 'zh-CN' | 'en-US' | 'zh-HK';
 

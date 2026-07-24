@@ -1,4 +1,4 @@
-import { getRequestInstance, type HttpRequest, initializeRequest, resetRequest } from '@lrd/dy-sec-bizlib-request';
+import { getRequestInstance, type HttpRequest, initializeRequest, resetRequest } from '@dayu-sec/bizlib-request';
 import { DEFAULT_REQUEST_INSTANCE_NAME, defaultRequestConfig } from '@/configs/request';
 import { getCurrentLocale } from '@/locales';
 

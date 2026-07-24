@@ -1,4 +1,4 @@
-import { type CustomRequestConfig, normalizeError } from '@lrd/dy-sec-bizlib-request';
+import { type CustomRequestConfig, normalizeError } from '@dayu-sec/bizlib-request';
 import type { AxiosResponse, InternalAxiosRequestConfig } from 'axios';
 
 export const DEFAULT_REQUEST_INSTANCE_NAME = 'default-api';

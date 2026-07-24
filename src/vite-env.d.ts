@@ -1,6 +1,6 @@
 /// <reference types="vite/client" />
 /// <reference types="vite-plugin-pages/client-react" />
-/// <reference types="@lrd/dy-sec-bizlib-shared-types/global" />
+/// <reference types="@dayu-sec/bizlib-shared-types/global" />
 
 // https://cn.vite.dev/guide/env-and-mode.html#intellisense
 interface ImportMetaEnv {

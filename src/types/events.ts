@@ -1,1 +1,1 @@
-export type { LocaleChangeEventData } from '@lrd/dy-sec-bizlib-shared-types';
+export type { LocaleChangeEventData } from '@dayu-sec/bizlib-shared-types';
