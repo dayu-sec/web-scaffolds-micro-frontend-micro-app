@@ -62,6 +62,9 @@
 
 ## 代码规范
 
+- 新建或在独立重构中主动重命名的 React 组件目录、主组件文件及其同名附属文件使用 PascalCase；不因统一命名迁移已有路径。
+- 自定义 Hook 的导出函数和主文件使用 `useXxx` camelCase，Hook 分组目录使用 kebab-case；未调用 React Hook 的普通函数不得使用 `use` 前缀。
+- Service、契约、类型、常量、配置、工具及其他非组件、非 Hook 模块的目录和文件使用小写 kebab-case；框架、工具链和外部契约固定名按实际约定保留。
 - TypeScript 使用严格模式，避免 `any`，优先用 `unknown`、精确类型或泛型约束。
 - 只导出类型时使用 `export type`。
 - 函数组件使用 `function` 声明；箭头函数主要用于回调和局部函数。
@@ -108,6 +111,12 @@
 - 开发代理由 `proxy.ts` 读取 `.env.development.local` 中仅供 Vite 配置进程使用的 `DEV_API_URL`、`DEV_API_TOKEN`、`DEV_SERVER_PORT` 等本地变量。
 - Mock 使用 `vite-plugin-mock-dev-server`，有本地 Mock 文件时优先本地响应，缺失时走代理。
 - Mock 数据可使用 `@faker-js/faker` 生成，但不要把真实业务数据、客户数据或内部环境信息写入 Mock。
+
+## Agent 资料维护
+
+- 创建或更新项目 `AGENTS.md`、项目级 `SKILL.md`、`references/` 或 `agents/openai.yaml` 时，只记录稳定的工程约束、职责边界和完成协作所必需的源码入口。
+- 不把真实业务模块、页面、服务、路由、API 路径、数据字段、业务文案、Mock 数据、客户或人员信息、内部环境配置及短期实现状态写成通用规则或示例；需要说明形态时使用中性占位符。
+- 计划同步到用户级、共享仓库或其他脚手架模板的内容必须能够脱离当前项目独立成立；交付前检查 diff，并定向搜索项目标识、业务名和敏感配置。
 
 ## 质量与验证
 
