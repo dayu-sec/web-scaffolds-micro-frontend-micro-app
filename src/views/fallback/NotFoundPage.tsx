@@ -1,5 +1,5 @@
 import { useLocation, useNavigate } from 'react-router-dom';
-import { Button, Result } from 'antd';
+import { Button } from 'antd';
 
 /**
  * 展示日志检索微应用内部未匹配子路由，并提供返回检索入口的动作。
@@ -16,15 +16,16 @@ export default function NotFoundPage() {
   }
 
   return (
-    <Result
-      status="404"
-      title="404"
-      subTitle={`日志检索微应用中不存在该页面：${location.pathname}`}
-      extra={
-        <Button type="primary" onClick={handleBackHome}>
-          返回日志检索
-        </Button>
-      }
-    />
+    <div className="dy-sec-shell-fallback">
+      <div className="dy-sec-shell-fallback__content">
+        <div className="dy-sec-shell-fallback__title">页面不存在</div>
+        <div className="dy-sec-shell-fallback__message">日志检索微应用中不存在该页面：{location.pathname}</div>
+        <div className="dy-sec-shell-fallback__action">
+          <Button type="primary" onClick={handleBackHome}>
+            返回日志检索
+          </Button>
+        </div>
+      </div>
+    </div>
   );
 }

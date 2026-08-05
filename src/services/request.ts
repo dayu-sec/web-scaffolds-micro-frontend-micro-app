@@ -1,23 +1,23 @@
 import { getRequestInstance, type HttpRequest, initializeRequest, resetRequest } from '@dayu-sec/bizlib-request';
-import { DEFAULT_REQUEST_INSTANCE_NAME, defaultRequestConfig } from '@/configs/request';
+import { API_REQUEST_INSTANCE_NAME, requestConfig } from '@/configs/request';
 import { getCurrentLocale } from '@/locales';
 
-/** 当前微应用生命周期持有的默认请求实例。 */
-export let request: HttpRequest;
+/** 当前微应用生命周期持有的共享 API 请求实例。 */
+export let apiRequest: HttpRequest;
 
-/** 在微应用运行时启动后注册并缓存默认请求实例。 */
+/** 在微应用运行时启动后注册并缓存共享 API 请求实例。 */
 export function setupRequest(): void {
   initializeRequest({
-    instances: [defaultRequestConfig],
+    instances: [requestConfig],
     getLocale: getCurrentLocale,
   });
-  request = getRequestInstance(DEFAULT_REQUEST_INSTANCE_NAME);
+  apiRequest = getRequestInstance(API_REQUEST_INSTANCE_NAME);
 }
 
-export { request as default };
+export { apiRequest as default };
 
 /**
- * 清理默认请求实例，避免微应用卸载后保留旧请求配置。
+ * 清理当前微应用持有的请求实例，避免卸载后保留旧请求配置。
  */
 export function cleanupRequest(): void {
   resetRequest();

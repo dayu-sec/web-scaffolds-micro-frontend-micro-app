@@ -210,8 +210,8 @@ sketch
 # TODO: where does this rule come from?
 docs/_book
 
-# TODO: where does this rule come from?
-test/
+# 项目测试源码需要纳入版本控制。
+# test/
 
 ### Windows ###
 # Windows thumbnail cache files

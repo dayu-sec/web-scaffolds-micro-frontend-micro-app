@@ -8,6 +8,7 @@ import { mockDevServerPlugin } from 'vite-plugin-mock-dev-server';
 import pages from 'vite-plugin-pages';
 import { name as appName, version as appVersion } from './package.json';
 import { getProxyConfig } from './proxy';
+import { API_BASE_PATH } from './src/constants/api';
 
 function resolveMicroAppBase(mode: string, env: Record<string, string>, appName: string): string {
   if (mode === 'production' && env.VITE_APP_BASE) {
@@ -99,7 +100,7 @@ export default defineConfig(({ mode }) => {
        * 在开发环境里搭一个 mock API 服务器
        */
       mockDevServerPlugin({
-        prefix: '/api/v1',
+        prefix: API_BASE_PATH,
       }),
     ],
 
