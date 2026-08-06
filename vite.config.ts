@@ -110,13 +110,12 @@ export default defineConfig(({ mode }) => {
      */
     server: {
       // NOTE: 仅单独启动微应用开发时有用
-      proxy: getProxyConfig(env),
-
-      port,
-
-      // 主应用通过 fetch 加载子应用的静态资源，由于主应用与子应用的域名不一定相同，子应用需要支持跨域
-      // 允许跨域
+      host: '0.0.0.0',
       cors: true,
+      port,
+      proxy: getProxyConfig(env),
+      // 支持在远程开发环境中运行
+      allowedHosts: ['.github.dev', '.cnb.run'],
       headers: {
         'Access-Control-Allow-Origin': '*',
       },
